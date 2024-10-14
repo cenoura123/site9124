@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+
+body{
+    transition: all 1s ease;
+    opacity: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body.loaded{
+    opacity: 1;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+    box-shadow: 5px 1px 15px rgba(0, 0, 0, .4);
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.LOGO-header {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    transition: all .2s ease;
+}
+
+.LOGO-header:hover {
+    transform: translateY(-8px);
+}
+
+.logo {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: "Bungee Shade";
+    padding: 15px;
+}
+
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu li {
+    transition: all .25s ease;
+}
+
+.menu li:hover{
+    transform: translateY(-8px);
+}
+
+.Icons {
+    font-size: 26px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+#MoonDark {
+    transition: all .55s ease;
+}
+
+#MoonDark:hover {
+    transform: translateY(-8px);
+}
+
+#MoonLight {
+    transition: all .55s ease;
+}
+
+#MoonLight:hover {
+    transform: translateY(-8px);
+}
+
+#MoonLight {
+    display: none;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Esconde o texto que ainda não foi "digitado" */
+    border-right: 3px solid black; /* Cria o efeito de cursor piscando */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    margin: 0 auto;
+    letter-spacing: 2px;
+    animation: typing 10s steps(30, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.section-1 {
+    width: 100vw;
+    height: 100vh;
+    background: url(src/matt-antonioli-3akA0XDg1_g-unsplash.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 {
+    width: 100vw;
+    height: 100vh;
+    background: url(src/pankaj-patel-u2Ru4QBXA5Q-unsplash.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3 {
+    width: 100vw;
+    height: 100vh;
+    background: url(src/phill-brown-8KXCIrTa1zk-unsplash.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 {
+    width: 100vw;
+    height: 100vh;
+    background: url(src/chris-liverani-HUJDz6CJEaM-unsplash.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Section-Container {
+    width: 75vw;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    color: #FFF;
+    padding: 15px;
+    border-radius: 15px;
+    
+}
+
+.div-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.div-project-container {
+    /* Exemplo de estilo */
+    padding: 60px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #f9f9f9; /* ou qualquer cor que você queira */
+    transition: all .2s ease;    
+    cursor: pointer;
+}
+
+.div-project-container:hover{
+    transform: scale(1.5);
+}
+
+
+.div-1 {
+    width: 20vw;
+    height: 20vh;
+    background: url(projects/Ecommerce/View.png) no-repeat center center/cover;
+}
+
+.div-1:hover {
+    box-shadow: 1px 3px 20px #311d2d;
+}
+
+.div-2 {
+    width: 20vw;
+    height: 20vh;
+    background: url(projects/Cards/View.png) no-repeat center center/cover;
+}
+
+.div-2:hover{
+    box-shadow: 1px 3px 20px #f9f9f9;
+}
+
+.div-3 {
+    width: 20vw;
+    height: 20vh;
+    background: url(projects/todo_list/View.png) no-repeat center center/cover;
+}
+
+.div-3:hover {
+    box-shadow: 1px 3px 20px rgba(253,29,29,1);
+}
+
+#Container-h1 {
+    font-size: 40px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+
+
+.git-hub-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gitHub {
+    transition: all .24s ease;
+    cursor: pointer;
+    font-size: 75px;
+    color: black;
+}
+
+#gitHub:hover {
+    transform: translateY(-12px);
+}
+
+#menu {
+    display: none;
+}
+
+
+
+/* Para telas menores que 1200px (Desktops e Tablets) */
+@media (max-width: 1200px) {
+    .menu ul {
+        width: 400px;
+    }
+
+    .div-1, .div-2, .div-3 {
+        width: 15vw;
+        height: 15vh;
+    }
+}
+
+/* Para telas menores que 992px (Tablets) */
+@media (max-width: 992px) {
+    
+
+    .div-1, .div-2, .div-3 {
+        width: 30vw;
+        height: 30vh;
+    }
+
+}
+
+/* Para telas menores que 768px (Tablets e Smartphones) */
+@media (max-width: 768px) {
+    header {
+        height: 70px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu ul {
+        width: 300px;
+    }
+
+    .div-projects {
+        flex-direction: column;
+    }
+
+    .div-1, .div-2, .div-3 {
+        width: 40vw;
+        height: 40vh;
+    }
+
+}
+
+/* Para telas menores que 576px (Smartphones) */
+@media (max-width: 576px) {
+    header {
+        height: 60px;
+        padding: 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu ul {
+        width: 300px;
+    }
+
+    .div-1, .div-2, .div-3 {
+        width: 20vw;
+        height: 20vh;
+    }
+
+    .Section-Container {
+        width: 90vw;
+        height: 80vh;
+        padding: 25px;
+    }
+}
